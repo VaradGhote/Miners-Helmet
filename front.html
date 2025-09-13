@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Monitor Dashboard</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon temperature-icon"></div>
+            <div class="details">
+                <h2>Temperature</h2>
+                <p id="temperature">22°C</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon humidity-icon"></div>
+            <div class="details">
+                <h2>Humidity</h2>
+                <p id="humidity">45%</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="circular-progress" id="gas-progress">
+                <span class="progress-value" id="gas-value">50%</span>
+            </div>
+            <div class="details">
+                <h2>Gas Level</h2>
+                <p id="gas-level">0.5 ppm</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon active-time-icon"></div>
+            <div class="details">
+                <h2>Active Time</h2>
+                <p id="active-time">12 hrs</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
